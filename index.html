@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="weatherApp">
+    <form id="weatherForm">
+      <input id="cityInput" type="text" placeholder="Enter city to check weather">
+      <button type="button" id="searchButton">
+        <i class="material-icons">search</i>
+      </button>
+    </form>
+
+    <div class="weather-city">
+      <div id="weatherDisplay"></div> <!-- To display additional messages or errors -->
+      <div class="city">
+        <h2 id="cityName">City</h2>
+        <h5 id="date">Date</h5>
+      </div>
+
+      <div class="weather-container">
+        <i class="material-icons" id="weatherIcon">wb_sunny</i>
+        <h1 id="temperature">0°</h1>
+        <h7 id="weatherDescription">Weather Desc.</h7>
+      </div>
+      <div class="w-info">
+        <div class="info">
+          <i class="material-icons">air</i>
+          <h3 id="windSpeed">0 km/h</h3>
+          <p>Wind</p>
+        </div>
+
+        <div class="info">
+          <i class="material-icons">water_drop</i>
+          <h3 id="humidity">0%</h3>
+          <p>Humidity</p>
+        </div>
+
+        <div class="info">
+          <i class="material-icons">visibility</i>
+          <h3 id="visibility">0 m</h3>
+          <p>Visibility</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script> <!-- Link to your JS file -->
+</body>
+
+</html>
